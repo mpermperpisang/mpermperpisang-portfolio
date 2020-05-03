@@ -1,0 +1,12 @@
+*.key
+*.crt
+*.env
+*.idea
+*.iml
+*.json
+capabilities*.properties
+*.vscode
+golang*.html
+*.app
+*.apk
+*.ipa
