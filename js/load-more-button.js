@@ -1,11 +1,18 @@
 $(document).ready(function () {
   size_div = $("#myList div").size();
   x=8;
+  console.log(size_div)
 
   $('#myList div:lt('+x+')').show();
   $("#showLess").hide();
   $('#loadMore').click(function () {
     x= (x+8 <= size_div) ? x+8 : size_div;
+    console.log(x)
+
+    if (x < 13) {
+      x = x + 4;
+    }
+
     $('#myList div:lt('+x+')').show();
     $(this).toggle(x < size_div);
     $("#showLess").show();
